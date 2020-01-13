@@ -8,8 +8,7 @@ install:
     - npm ci
 
 script: 
-    - ng test
-    - npm run compodoc
+    - npm deploy
 
 
 deploy: 
