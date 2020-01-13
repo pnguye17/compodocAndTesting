@@ -4,14 +4,14 @@ docs-deploy:
   steps:
     - checkout
     - attach_workspace:
-        at: docs/_build
+        at: docs/documentation
     - run:
         name: Install and configure dependencies
         command: |
           npm install -g --silent gh-pages
           npm install @angular/cli
           npm install @compodoc/compodoc
-          git config user.email "peter.nguyen17@gmail.com
+          git config user.email "peter.nguyen17@gmail.com"
           git config user.name "pnguye17"
           ng build --prod
     - run:
