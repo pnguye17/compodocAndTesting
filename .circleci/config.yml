@@ -13,5 +13,8 @@ jobs:
           name: Install Angular
           command: echo y | sudo npm install -g @angular/cli
       - run:
+          name: Install compodoc
+          command: npm install @compodoc/compodoc
+      - run:
           name: Build Angular Application
           command: ng build --prod && npm run compodoc
