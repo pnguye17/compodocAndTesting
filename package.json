@@ -2,12 +2,13 @@
   "name": "compodoc-and-testing",
   "version": "0.0.0",
   "scripts": {
-    "ng": "ng",
+    "ng": "ng", 
     "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "compodoc": "./node_modules/.bin/compodoc -p tsconfig.app.json -w -s"
   },
   "private": true,
   "dependencies": {
