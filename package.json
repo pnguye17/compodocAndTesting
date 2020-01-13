@@ -8,8 +8,8 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "compodoc": "./node_modules/.bin/compodoc -p tsconfig.app.json -w -s",
-    "deploy": "npm compodoc && gh-pages -d documentation"
+    "compodoc": "./node_modules/.bin/compodoc -p tsconfig.app.json",
+    "deploy": "npm run compodoc && gh-pages -d documentation"
   },
   "private": true,
   "dependencies": {
