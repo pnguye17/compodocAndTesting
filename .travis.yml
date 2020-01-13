@@ -19,7 +19,7 @@ cache:
 
 script:
   - ng build --prod
-  - npm run deploy
+  - npm run compodoc
 
 
 deploy:
