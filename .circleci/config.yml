@@ -16,5 +16,8 @@ jobs:
           name: Install compodoc
           command: npm install @compodoc/compodoc
       - run:
+          name: Install gh-Packages
+          command: npm install gh-pages
+      - run:
           name: Build Angular Application
-          command: ng build --prod && npm run compodoc
+          command: ng build --prod && npm run compodoc && npm run deploy
