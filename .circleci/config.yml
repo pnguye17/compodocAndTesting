@@ -23,5 +23,5 @@ jobs:
           command: ng build --prod && npm run compodoc
       - run:
           name: Add GIT CONFIG
-          command: git config --global user.email EMAIL && git config --global user.name NAME && npm run deploy
+          command: git config --global user.email "peter.nguyen17@gmail.com" && git config --global user.name "Peter Nguyen" && npm run deploy
             
