@@ -18,11 +18,10 @@ jobs:
       - run:
           name: Install gh-Packages
           command: npm install gh-pages
-
-      - run:
-          name: Add GIT CONFIG
-          command: git config --global user.email EMAIL && git config --global user.name NAME
-
       - run:
           name: Build Angular Application
           command: ng build --prod && npm run compodoc && npm run deploy
+      - run:
+          name: Add GIT CONFIG
+          command: git config --global user.email EMAIL && git config --global user.name NAME
+            
