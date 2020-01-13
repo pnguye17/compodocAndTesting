@@ -9,7 +9,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "compodoc": "./node_modules/.bin/compodoc -p tsconfig.app.json",
-    "deploy": "npm run compodoc && gh-pages -d documentation"
+    "deploy": "gh-pages -d documentation"
   },
   "private": true,
   "dependencies": {

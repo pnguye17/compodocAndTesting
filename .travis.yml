@@ -11,7 +11,7 @@ addons:
 
 before_script:
   - npm install @angular/cli
-  - npm install compodoc
+  - npm install @compodoc/compodoc — save-dev
 
 cache:
   npm: true
@@ -20,6 +20,8 @@ cache:
 
 script:
   - ng build --prod
+  - npm run deploy
+  - npm run compodoc
   - npm run deploy
 
 
