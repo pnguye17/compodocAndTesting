@@ -30,5 +30,5 @@ deploy:
   github-username: $username
   github-password: $password
   keep-history: true
-  local-dir: ./dist
+  local-dir: ./documentation
   on:
