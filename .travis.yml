@@ -13,6 +13,7 @@ before_script:
   - npm install @angular/cli
 
 cache:
+  npm: true
   directories:
     - node_modules
 
