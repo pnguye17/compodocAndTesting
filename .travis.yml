@@ -11,6 +11,7 @@ addons:
 
 before_script:
   - npm install @angular/cli
+  - npm install compodoc
 
 cache:
   npm: true
