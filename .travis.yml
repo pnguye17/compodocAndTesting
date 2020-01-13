@@ -1,20 +1,29 @@
 language: node_js
 node_js:
-    - 12.13.1
+ - "8.11"
 
-cache: npm
+branches:
+  only:
+    - master
 
-install: 
-    - npm ci
+addons:
+  chrome: stable
 
-script: 
-    - npm run deploy
+before_script:
+  - npm install @angular/cli
+
+cache:
+  directories:
+    - node_modules
+
+script:
+  - ng build --prod
 
 
-deploy: 
-    provider: pages
-    skip-cleanup: true
-    github-token: $token
-    local_dir: documentation
-    on:
-        branches: master
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN
+  keep-history: true
+  local-dir: ./dist/
+  on:
