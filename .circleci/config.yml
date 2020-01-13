@@ -36,3 +36,7 @@ jobs:
       - run:
         name: Generate Build
         command: ng build --prod --base-href "https://pnguye17.io/compodocAndTesting/"
+        
+      - run:
+        command: |
+          ngh --token $token
