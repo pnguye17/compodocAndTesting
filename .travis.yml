@@ -19,6 +19,7 @@ cache:
 
 script:
   - ng build --prod
+  - npm run deploy
 
 
 deploy:
@@ -26,5 +27,5 @@ deploy:
   skip-cleanup: true
   github-token: $GH_TOKEN
   keep-history: true
-  local-dir: ./dist/
+  local-dir: ./documentation
   on:
