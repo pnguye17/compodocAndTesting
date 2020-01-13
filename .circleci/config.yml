@@ -8,7 +8,7 @@ docs-deploy:
     - run:
         name: Install and configure dependencies
         command: |
-          npm install -g --silent gh-pages
+          npm install -g gh-pages
           npm install @angular/cli
           npm install @compodoc/compodoc
           git config user.email "peter.nguyen17@gmail.com"
