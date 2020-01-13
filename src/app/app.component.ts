@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   /**
    * this is the title of the page
+   * generation on circle ci 
    */
   
   title = 'compodocAndTesting';
