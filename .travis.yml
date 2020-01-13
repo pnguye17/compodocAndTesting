@@ -19,15 +19,16 @@ cache:
     - node_modules
 
 script:
-  - ng build --prod
-  - npm run compodoc
-  - npm run deploy
+  - ng build --prod && npm run compodoc
+
 
 
 deploy:
   provider: pages
   skip-cleanup: true
   github-token: $GH_TOKEN
+  github-username: $username
+  github-password: $password
   keep-history: true
-  local-dir: ./documentation
+  local-dir: ./dist
   on:
